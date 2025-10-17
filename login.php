@@ -24,8 +24,9 @@ if (!isset($_POST['username']) || !isset($_POST['password'])) {
             "login_at" => date("Y-m-d H:i:s")
         ];
 
+        echo '<br>';
         // jika benar
-        echo "selamat datang : " . $username . " anda teah login sebanyak: " . count($_SESSION['login']) . " kali";
+        echo "selamat datang : " . $username . " <br> anda telah login sebanyak: " . count($_SESSION['login']) . " kali";
 
         echo '<br>';
 
